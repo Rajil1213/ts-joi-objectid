@@ -1,7 +1,7 @@
 
 # joi-objectid
 
-A MongoDB ObjectId validator for Joi.
+A MongoDB ObjectId validator for Joi with types!
 
 [![Build Status](https://travis-ci.org/pebble/joi-objectid.svg?branch=master)](https://travis-ci.org/pebble/joi-objectid)
 
@@ -12,15 +12,15 @@ in length.
 
 It's used just like you'd use any other `Joi` type.
 
-```js
-var Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
+```ts
+import { joiObjectId } from 'joi-objectid';
+const joi_oid = joiObjectId(Joi);
 
-var schema = {
-  id: Joi.objectId()
-, name: Joi.string().max(100)
-, date: Joi.date()
-}
+let schema: Joi.ObjectSchema = Joi.object({
+  id: joi_oid().required(),
+  name: Joi.string().max(100),
+  date: Joi.date()
+})
 
 ```
 
