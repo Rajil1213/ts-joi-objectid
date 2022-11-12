@@ -13,7 +13,7 @@ in length.
 It's used just like you'd use any other `Joi` type.
 
 ```ts
-import { joiObjectId } from 'joi-objectid';
+import { joiObjectId } from 'ts-joi-objectid';
 const joi_oid = joiObjectId(Joi);
 
 let schema: Joi.ObjectSchema = Joi.object({
