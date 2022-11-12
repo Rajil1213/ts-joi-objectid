@@ -2,8 +2,7 @@
 # joi-objectid
 
 A MongoDB ObjectId validator for Joi with types!
-
-[![Build Status](https://travis-ci.org/pebble/joi-objectid.svg?branch=master)](https://travis-ci.org/pebble/joi-objectid)
+Package based on [joi-objectid](https://github.com/pebble/joi-objectid)
 
 ## use
 
@@ -31,15 +30,9 @@ npm install joi-objectid --save
 ```
 
 ### Development
-
-#### running tests
-
-- `make test`
-
-## Sponsored by
-
-[Pebble Technology!](https://getpebble.com)
+```
+npm run dev
+```
 
 ## License
-
-[MIT](https://github.com/pebble/joi-objectid/blob/master/LICENSE)
+[MIT](https://github.com/Rajil1213/ts-joi-objectid/blob/master/LICENSE)
